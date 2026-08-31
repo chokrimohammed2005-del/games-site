@@ -2,22 +2,33 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P6SML24YB"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-6P6SML24YB');
-</script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P6SML24YB"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-6P6SML24YB');
+    </script>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Snake Game</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -26,39 +37,70 @@
 
         <h1>Snake Game</h1>
 
-        <p id="score">Score: 0</p>
+        <p id="score">
+            Score: 0
+        </p>
+
 
         <div class="game-board">
 
-            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <canvas
+                id="gameCanvas"
+                width="400"
+                height="400"
+            ></canvas>
 
-            <button id="start" class="start-overlay">
-                â–¶ Start Game
+            <button
+                id="start"
+                class="start-overlay"
+            >
+                &#9654; Start Game
             </button>
 
         </div>
 
+
         <p id="message"></p>
+
 
         <div class="mobile-controls">
 
-            <button id="upBtn">â†‘</button>
+            <button id="upBtn">
+                &#8593;
+            </button>
 
             <div class="middle-controls">
-                <button id="leftBtn">â†</button>
-                <button id="downBtn">â†“</button>
-                <button id="rightBtn">â†’</button>
+
+                <button id="leftBtn">
+                    &#8592;
+                </button>
+
+                <button id="downBtn">
+                    &#8595;
+                </button>
+
+                <button id="rightBtn">
+                    &#8594;
+                </button>
+
             </div>
 
         </div>
 
-        <button id="restart">Restart Game</button>
 
-        <a href="../../index.html" class="back-btn">
+        <button id="restart">
+            Restart Game
+        </button>
+
+        <a
+            href="../../index.html"
+            class="back-btn"
+        >
             Back to Games
         </a>
 
     </div>
+
 
     <script src="script.js"></script>
 
