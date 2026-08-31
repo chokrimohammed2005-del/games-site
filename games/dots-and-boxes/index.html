@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dots and Boxes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-card">
+
+        <div class="top-area">
+
+            <div>
+                <p class="small-title">2 PLAYER GAME</p>
+                <h1>Dots and Boxes</h1>
+            </div>
+
+            <div id="turnText" class="turn-badge">
+                Player 1 Turn
+            </div>
+
+        </div>
+
+        <div class="score-board">
+
+            <div class="score-box player1-box active" id="player1Box">
+                <span>Player 1</span>
+                <strong id="score1">0</strong>
+            </div>
+
+            <div class="score-box player2-box" id="player2Box">
+                <span>Player 2</span>
+                <strong id="score2">0</strong>
+            </div>
+
+        </div>
+
+        <p class="instructions">
+            Connect the dots and complete more boxes than your friend.
+        </p>
+
+        <div class="board-wrapper">
+
+            <div id="gameBoard" class="game-board"></div>
+
+        </div>
+
+        <p id="message"></p>
+
+        <div class="bottom-actions">
+
+            <button id="restart">
+                Restart Game
+            </button>
+
+            <a href="../../index.html" class="back-btn">
+                Back to Games
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

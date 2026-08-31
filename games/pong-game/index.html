@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pong 2 Players</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-card">
+
+        <h1>Pong 2 Players</h1>
+
+        <p class="controls-text">
+            Player 1: W / S &nbsp;&nbsp; | &nbsp;&nbsp; Player 2: ↑ / ↓
+        </p>
+
+        <div class="score-board">
+
+            <div class="score-box">
+                <span>Player 1</span>
+                <strong id="score1">0</strong>
+            </div>
+
+            <div class="score-box">
+                <span>Player 2</span>
+                <strong id="score2">0</strong>
+            </div>
+
+        </div>
+        <p class="rotate-message">
+    📱 For the best experience, rotate your phone
+</p>
+
+        <div class="game-wrapper">
+
+            <canvas
+                id="gameCanvas"
+                width="700"
+                height="400">
+            </canvas>
+
+            <button id="start" class="start-overlay">
+                ▶ Start Game
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+        <div class="mobile-controls">
+
+    <div class="player-controls">
+
+        <span>Player 1</span>
+
+        <div class="control-buttons">
+            <button id="p1Up">▲</button>
+            <button id="p1Down">▼</button>
+        </div>
+
+    </div>
+
+
+    <div class="player-controls">
+
+        <span>Player 2</span>
+
+        <div class="control-buttons">
+            <button id="p2Up">▲</button>
+            <button id="p2Down">▼</button>
+        </div>
+
+    </div>
+
+</div>
+
+        <button id="restart">
+            Restart Game
+        </button>
+
+        <button id="resetScore">
+            Reset Score
+        </button>
+
+        <a href="../../index.html" class="back-btn">
+            Back to Games
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

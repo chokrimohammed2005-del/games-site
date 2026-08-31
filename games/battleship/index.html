@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Battleship 2 Players</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-card">
+
+        <div class="top-area">
+
+            <div>
+                <p class="small-title">2 PLAYER STRATEGY</p>
+                <h1>Battleship</h1>
+            </div>
+
+            <div id="turnText" class="turn-badge">
+                Player 1 Setup
+            </div>
+
+        </div>
+
+
+        <div class="players">
+
+            <div class="player-box active" id="player1Box">
+                <span>PLAYER 1</span>
+                <strong id="player1Status">
+                    Place Ships
+                </strong>
+            </div>
+
+            <div class="player-box" id="player2Box">
+                <span>PLAYER 2</span>
+                <strong id="player2Status">
+                    Waiting
+                </strong>
+            </div>
+
+        </div>
+
+
+        <p id="instructionText" class="instructions">
+            Player 1: place your ships on the board.
+        </p>
+
+
+        <div class="ship-panel" id="shipPanel">
+
+            <button class="ship-btn active" data-size="4">
+                Battleship ×4
+            </button>
+
+            <button class="ship-btn" data-size="3">
+                Cruiser ×3
+            </button>
+
+            <button class="ship-btn" data-size="2">
+                Destroyer ×2
+            </button>
+
+            <button id="rotateBtn" class="rotate-btn">
+                Rotate: Horizontal
+            </button>
+
+        </div>
+
+
+        <div class="boards-wrapper">
+
+            <div class="board-section">
+
+                <h2 id="boardTitle">
+                    Your Fleet
+                </h2>
+
+                <div id="gameBoard" class="battle-board"></div>
+
+            </div>
+
+        </div>
+
+
+        <p id="message"></p>
+
+
+        <div class="bottom-actions">
+
+            <button id="readyBtn" disabled>
+                Ready
+            </button>
+
+            <button id="restart">
+                Restart Game
+            </button>
+
+            <a href="../../index.html" class="back-btn">
+                Back to Games
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="battleship.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#222222">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>X O Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CHOIX DYAL MODE -->
+    <div id="modeSelection">
+
+        <h1>X O Game</h1>
+
+        <h2>Khtar kifach bghiti tl3ab</h2>
+
+        <button id="friendMode">
+            👥 L3ab m3a sahbek
+        </button>
+
+        <button id="aiMode">
+            🤖 L3ab dad AI
+        </button>
+
+    </div>
+
+
+    <!-- GAME -->
+    <div id="gameArea">
+
+        <h1>X O Game</h1>
+
+        <div class="score-board">
+
+            <div class="score-box x-box active" id="xBox">
+                <span>X</span>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score-box o-box" id="oBox">
+                <span>O</span>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </div>
+
+        <p id="gameModeText"></p>
+
+        <p id="turn">Daba dor X</p>
+
+        <p id="message"></p>
+
+        <div class="game">
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+        </div>
+
+        <button id="restart">Restart Game</button>
+
+        <button id="resetScore">Reset Score</button>
+
+        <button id="changeMode">Change Mode</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

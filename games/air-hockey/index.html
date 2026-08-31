@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Air Hockey 2 Players</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-card">
+
+        <h1>Air Hockey</h1>
+
+        <p class="controls-text">
+            2 Players - Drag your paddle
+        </p>
+
+        <div class="score-board">
+
+            <div class="score-box">
+                <span>Player 1</span>
+                <strong id="score1">0</strong>
+            </div>
+
+            <div class="score-box">
+                <span>Player 2</span>
+                <strong id="score2">0</strong>
+            </div>
+
+        </div>
+
+        <div class="game-wrapper">
+
+            <canvas
+                id="gameCanvas"
+                width="700"
+                height="420">
+            </canvas>
+
+            <button id="start" class="start-overlay">
+                ▶ Start Game
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+        <button id="restart">
+            Restart Game
+        </button>
+
+        <button id="resetScore">
+            Reset Score
+        </button>
+
+        <a href="../../index.html" class="back-btn">
+            Back to Games
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

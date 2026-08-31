@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background: linear-gradient(135deg, #f4f4f4, #dddddd);
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.game-card {
+    width: min(92%, 520px);
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 0 10px;
+
+    font-size: 50px;
+}
+
+#score {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    margin: 8px 0;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    background: #f2f2f2;
+
+    border-radius: 12px;
+}
+
+.instructions {
+    color: #666;
+
+    font-size: 15px;
+
+    margin: 12px 0 20px;
+}
+
+
+/* =========================
+   2048 BOARD
+========================= */
+
+.game-board {
+    width: 100%;
+
+    max-width: 400px;
+
+    aspect-ratio: 1 / 1;
+
+    margin: 20px auto;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 10px;
+
+    background: #b9ada1;
+
+    border-radius: 16px;
+}
+
+
+/* =========================
+   TILES
+========================= */
+.tile {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #cdc1b4;
+
+    border-radius: 10px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    transition:
+        transform 0.14s ease,
+        background-color 0.14s ease;
+
+    animation: tileAppear 0.14s ease;
+}
+
+.tile-2 {
+    background: #eee4da;
+    color: #776e65;
+}
+
+.tile-4 {
+    background: #ede0c8;
+    color: #776e65;
+}
+
+.tile-8 {
+    background: #f2b179;
+    color: white;
+}
+
+.tile-16 {
+    background: #f59563;
+    color: white;
+}
+
+.tile-32 {
+    background: #f67c5f;
+    color: white;
+}
+
+.tile-64 {
+    background: #f65e3b;
+    color: white;
+}
+
+.tile-128 {
+    background: #edcf72;
+    color: white;
+
+    font-size: 27px;
+}
+
+.tile-256 {
+    background: #edcc61;
+    color: white;
+
+    font-size: 27px;
+}
+
+.tile-512 {
+    background: #edc850;
+    color: white;
+
+    font-size: 27px;
+}
+
+.tile-1024 {
+    background: #edc53f;
+    color: white;
+
+    font-size: 23px;
+}
+
+.tile-2048 {
+    background: #edc22e;
+    color: white;
+
+    font-size: 23px;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+#message {
+    min-height: 24px;
+
+    margin: 15px 0;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+#restart,
+.back-btn {
+    display: inline-block;
+
+    margin: 10px 5px;
+
+    padding: 12px 18px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#restart {
+    border: none;
+
+    background: #222;
+    color: white;
+}
+
+.back-btn {
+    background: #eeeeee;
+    color: #222;
+
+    border: 1px solid #dddddd;
+}
+
+#restart:hover,
+.back-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .game-card {
+        padding: 22px 15px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .game-board {
+        gap: 7px;
+        padding: 8px;
+    }
+
+    .tile {
+        font-size: 24px;
+    }
+
+    .tile-128,
+    .tile-256,
+    .tile-512 {
+        font-size: 22px;
+    }
+
+    .tile-1024,
+    .tile-2048 {
+        font-size: 18px;
+    }
+}
+@keyframes tileAppear {
+
+    0% {
+        transform: scale(0.90);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* =========================
+   MOBILE CONTROLS
+========================= */
+
+.mobile-controls {
+    margin: 20px 0 10px;
+}
+
+.mobile-controls button {
+    width: 58px;
+    height: 58px;
+
+    margin: 4px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #222;
+    color: white;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.15s ease;
+}
+
+.mobile-controls button:hover {
+    transform: translateY(-2px);
+}
+
+.mobile-controls button:active {
+    transform: scale(0.92);
+}
+
+.middle-controls {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}

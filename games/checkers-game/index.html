@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkers 2 Players</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="checkers-card">
+
+        <div class="top-area">
+
+            <div>
+                <p class="small-title">2 PLAYER CLASSIC</p>
+                <h1>Checkers</h1>
+            </div>
+
+            <div id="turnText" class="turn-badge">
+                Red Turn
+            </div>
+
+        </div>
+
+        <div class="players">
+
+            <div class="player-box red-player active" id="redPlayer">
+                <span class="player-piece red-disc"></span>
+
+                <div>
+                    <small>PLAYER 1</small>
+                    <strong>Red</strong>
+                </div>
+            </div>
+
+            <div class="player-box black-player" id="blackPlayer">
+                <span class="player-piece black-disc"></span>
+
+                <div>
+                    <small>PLAYER 2</small>
+                    <strong>Black</strong>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="board-frame">
+
+            <div id="checkersBoard" class="checkers-board"></div>
+
+        </div>
+
+        <p id="message"></p>
+
+        <div class="bottom-actions">
+
+            <button id="restart">
+                Restart Game
+            </button>
+
+            <a href="../../index.html" class="back-btn">
+                Back to Games
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
