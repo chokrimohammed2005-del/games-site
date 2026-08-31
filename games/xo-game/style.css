@@ -422,6 +422,38 @@ h1 {
 
 
 /* =========================
+   BACK TO GAMES
+========================= */
+
+.back-btn {
+    display: inline-block;
+
+    margin: 8px 4px;
+
+    padding: 12px 18px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: white;
+
+    background-color: #666;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+
+    background-color: #4f4f4f;
+}
+
+
+/* =========================
    MOBILE
 ========================= */
 
@@ -478,7 +510,8 @@ h1 {
 
     #restart,
     #resetScore,
-    #changeMode {
+    #changeMode,
+    .back-btn {
         font-size: 14px;
 
         padding: 11px 14px;

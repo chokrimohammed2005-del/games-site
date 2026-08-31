@@ -2,22 +2,29 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P6SML24YB"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-6P6SML24YB');
-</script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P6SML24YB"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-6P6SML24YB');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Chess 2 Players</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -27,45 +34,73 @@
         <div class="top-area">
 
             <div>
-                <p class="small-title">2 PLAYER CLASSIC</p>
+                <p class="small-title">
+                    2 PLAYER CLASSIC
+                </p>
+
                 <h1>Chess</h1>
             </div>
 
-            <div id="turnText" class="turn-badge">
+            <div
+                id="turnText"
+                class="turn-badge"
+            >
                 White Turn
             </div>
 
         </div>
 
+
         <div class="players">
 
-            <div class="player-box white-player active" id="whitePlayer">
-                <span class="player-piece">â™”</span>
+            <div
+                class="player-box white-player active"
+                id="whitePlayer"
+            >
+
+                <span class="player-piece">
+                    &#9812;
+                </span>
 
                 <div>
                     <small>PLAYER 1</small>
                     <strong>White</strong>
                 </div>
+
             </div>
 
-            <div class="player-box black-player" id="blackPlayer">
-                <span class="player-piece">â™š</span>
+
+            <div
+                class="player-box black-player"
+                id="blackPlayer"
+            >
+
+                <span class="player-piece">
+                    &#9818;
+                </span>
 
                 <div>
                     <small>PLAYER 2</small>
                     <strong>Black</strong>
                 </div>
+
             </div>
 
         </div>
 
+
         <div class="board-frame">
 
-            <div id="chessBoard" class="chess-board"></div>
+            <div
+                id="chessBoard"
+                class="chess-board"
+            ></div>
 
         </div>
 
+
         <p id="message"></p>
+
 
         <div class="bottom-actions">
 
@@ -73,13 +108,17 @@
                 Restart Game
             </button>
 
-            <a href="../../index.html" class="back-btn">
+            <a
+                href="../../index.html"
+                class="back-btn"
+            >
                 Back to Games
             </a>
 
         </div>
 
     </div>
+
 
     <script src="script.js"></script>
 
