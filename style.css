@@ -553,3 +553,53 @@ header p {
         height: 88px;
     }
 }
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    width: min(1200px, 92%);
+
+    margin: 0 auto;
+
+    padding: 25px 0 35px;
+
+    text-align: center;
+
+    border-top:
+        1px solid rgba(255,255,255,0.08);
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #aeb5d0;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.site-footer p {
+    margin: 0;
+
+    color: #72798f;
+
+    font-size: 13px;
+}
