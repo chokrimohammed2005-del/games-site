@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P6SML24YB"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-6P6SML24YB');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P6SML24YB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-6P6SML24YB');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,7 +28,7 @@
         <h1>Pong 2 Players</h1>
 
         <p class="controls-text">
-            Player 1: W / S &nbsp;&nbsp; | &nbsp;&nbsp; Player 2: â†‘ / â†“
+            Player 1: W / S &nbsp;&nbsp; | &nbsp;&nbsp; Player 2: &#8593; / &#8595;
         </p>
 
         <div class="score-board">
@@ -43,51 +44,48 @@
             </div>
 
         </div>
+
         <p class="rotate-message">
-    ðŸ“± For the best experience, rotate your phone
-</p>
+            &#128241; For the best experience, rotate your phone
+        </p>
 
         <div class="game-wrapper">
 
-            <canvas
-                id="gameCanvas"
-                width="700"
-                height="400">
-            </canvas>
+            <canvas id="gameCanvas" width="700" height="400"></canvas>
 
             <button id="start" class="start-overlay">
-                â–¶ Start Game
+                &#9654; Start Game
             </button>
 
         </div>
 
         <p id="message"></p>
+
         <div class="mobile-controls">
 
-    <div class="player-controls">
+            <div class="player-controls">
 
-        <span>Player 1</span>
+                <span>Player 1</span>
 
-        <div class="control-buttons">
-            <button id="p1Up">â–²</button>
-            <button id="p1Down">â–¼</button>
+                <div class="control-buttons">
+                    <button id="p1Up">&#9650;</button>
+                    <button id="p1Down">&#9660;</button>
+                </div>
+
+            </div>
+
+            <div class="player-controls">
+
+                <span>Player 2</span>
+
+                <div class="control-buttons">
+                    <button id="p2Up">&#9650;</button>
+                    <button id="p2Down">&#9660;</button>
+                </div>
+
+            </div>
+
         </div>
-
-    </div>
-
-
-    <div class="player-controls">
-
-        <span>Player 2</span>
-
-        <div class="control-buttons">
-            <button id="p2Up">â–²</button>
-            <button id="p2Down">â–¼</button>
-        </div>
-
-    </div>
-
-</div>
 
         <button id="restart">
             Restart Game
